@@ -135,3 +135,6 @@ out
 # TernJS port file
 
 .tern-port
+
+# InteliJ IDEA
+.idea
