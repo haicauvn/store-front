@@ -2,14 +2,14 @@
     "dev":{
         "driver":"pg",
         "host":"localhost",
-        "database":"be-6",
+        "database":"store-front",
         "user":"postgres",
         "password":"sis@12345"
     },
     "test":{
         "driver":"pg",
         "host":"localhost",
-        "database":"be-6",
+        "database":"store-front-test",
         "user":"postgres",
         "password":"sis@12345"
     }

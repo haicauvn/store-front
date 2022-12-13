@@ -47,3 +47,45 @@
 - Start server:       ```npm run server```,
 - build:              ```npm run build```,
 - jasmine:            ```npm run jasmine```
+
+# Get all users :
+GET : http://localhost:3000/users (Token Required)
+
+# Show detail user
+GET : http://localhost:3000/users/:id (Token Required)
+
+# Register user
+POST : http://localhost:3000/users/create
+
+# Login
+POST : http://localhost:3000/users/login
+
+# Edit user
+GET : http://localhost:3000/users/:id (Token Required)
+
+# Get all product
+GET : http://localhost:3000/products
+
+# Get product by id
+GET : http://localhost:3000/products:id
+
+# Get product by category
+GET : http://localhost:3000/products:category
+
+# Create new a product :
+POST : http://localhost:3000/products (Token Required)
+
+# Update  product :
+PUT : http://localhost:3000/products (Token Required)
+
+# Delete a product
+DELETE : http://localhost:3000/products/:id (Token Required)
+
+# Create order 
+POST : http://localhost:3000/orders/create (Token Required)
+
+# Get all orders by user :
+GET : http://localhost:3000/orders/user (Token Required)
+
+# Get completed orders :
+GET : http://localhost:3000/completedorders (Token Required)
