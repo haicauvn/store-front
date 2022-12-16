@@ -27,31 +27,36 @@ These are the notes from a meeting with the frontend developer that describe wha
 
 ## Data Shapes
 
-#### Product
+### Product
+| Column        | Data type                     | 
+| ------------- | ----------------------------- |
+| `id`          | serial primary key            | 
+| `name`        | varchar(100)                  | 
+| `price`       | int                           | 
+| `category`    | varchar(100)                  | 
 
--   id
--   name
--   price
--   category
 
-#### User
+### User
+| Column        | Data type                     | 
+| ------------- | ----------------------------- |
+| `id`          | serial primary key            | 
+| `firstName`   | varchar(100)                  | 
+| `lastName`    | varchar(100)                  | 
+| `username`    | varchar(100) not null         | 
+| `password`    | varchar(100) not null         |  
 
--   id
--   firstName
--   lastName
--   username
--   password
 
-#### Orders
+### Orders
+| Column        | Data type                     | 
+| ------------- | ----------------------------- |
+| `id`          | serial primary key            | 
+| `user_id`     | int REFERENCES users(id)      | 
+| `status`      | varchar(100)                  | 
 
--   id
--   user_id
--   status of order (active or complete)
 
-#### Order_Products
-
--   id
--   order_id of each order in the order
--   product_id of each product in the order
--   quantity of each product in the order
-
+### Order_Products
+| Column        | Data type                     | 
+| ------------- | ----------------------------- |
+| `id`          | serial primary key            | 
+| `order_id`    | int REFERENCES orders(id)     | 
+| `product_id`  | int REFERENCES products(id)   |
